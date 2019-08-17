@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% import "_macros.html" as macros %}
+{% block Content %}
+
+<div class="container wrapper">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h1 id="">Posts</h1>
+				</div>
+			</div>
+			<ul id="post-list">
+
+{% for article in articles %}
+    <div id='article-entry' class="entry-box">
+    {% include '_article_info.html' %}
+    </div>
+{% endfor %}
+
+			</ul>
+
+
+<div class="pagination-wrapper text-center">
+    <div class="pagination">
+    {% if endpoint == '.index' %}
+        {{ macros.pagination_widget(pagination, endpoint) }}
+    {% else %}
+        {{ macros.pagination_widget(pagination, endpoint, id=id) }}
+    {% endif %}
+    </div>
+</div>
+</div>
+{% endblock %}

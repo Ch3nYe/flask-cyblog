@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% import "_macros.html" as macros %}
+{% block Content %}
+		<div class="container wrapper">
+
+			<div class="row">
+				<div class="col-sm-3 col-centered">
+					<img alt="profile-picture" class="img-responsive img-circle user-picture" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2923572207,2462717602&fm=173&app=25&f=JPEG?w=380&h=335&s=3DDAE71709025F451E6C05FD0300D02D">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 user-profile text-center">
+					<h1 id="user-name">Guest.Link</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 user-social text-center">
+
+
+<a target="_blank" href="https://twitter.com/?lang=zh-cn" title="Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+
+
+
+<a target="_blank" href="https://www.facebook.com" title="Facebook"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+
+
+
+<a target="_blank" href="https://github.com/1344098010" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+
+
+
+
+<a target="_blank" href="https://www.linkedin.com/in/chenyewang/" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+
+
+
+
+<a target="_blank" href="mailto:2948335218@qq.com" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 user-description text-center">
+					<p> {{ Signature }} </p>
+				</div>
+			</div>
+			<div class="push"></div>
+		</div>
+
+{% endblock %}
