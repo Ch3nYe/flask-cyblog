@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from config import Config
-from flask_wtf.csrf import CsrfProtect
+from flask_wtf.csrf import CSRFProtect
 from flask_moment import Moment
 from flask_bootstrap import Bootstrap
 
@@ -18,7 +18,7 @@ def create_app():
     app.config.from_object(Config)
 
     Config.init_app(app)
-    #CsrfProtect(app)
+    CSRFProtect(app)
 
     db.init_app(app)
     bootstrap.init_app(app)

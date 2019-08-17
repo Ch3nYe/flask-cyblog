@@ -21,6 +21,7 @@
     <h4><strong>发表博文</strong></h4>
     <hr/>
     <form class="submit-article" method="post" action="">
+        {{ form.csrf_token }}
         <input id="csrf_token" name="csrf_token" type="hidden" value="1552696094##84a8bfd07d921edcf8b87283e80ab18cb48530fa">
         <div class="form-group">
             <label class="control-label" for="title">标题</label>：
